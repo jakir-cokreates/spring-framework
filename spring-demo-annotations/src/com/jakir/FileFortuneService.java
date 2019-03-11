@@ -13,7 +13,7 @@ import org.springframework.stereotype.Component;
 @Component
 public class FileFortuneService implements FortuneService {
 
-	private String fileName = "C:/Users/LENOVO/Desktop/fortune-data.txt";
+	private String fileName = "D:/spring/Remote/spring-framework/spring-demo-annotations/fortune-data.txt";
 	private List<String> theFortunes;
 
 	// create a random number generator
