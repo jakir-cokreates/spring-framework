@@ -1,9 +1,13 @@
 package com.jakir;
 
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
 @Component
 public class PingPongCoach implements Coach {
+
+	@Autowired
+	private FortuneService fortuneService;
 
 	// define a default constructor
 	public PingPongCoach() {
@@ -13,6 +17,11 @@ public class PingPongCoach implements Coach {
 	@Override
 	public String getDailyWorkout() {
 		return "Practice your pingpong drop shot";
+	}
+
+	@Override
+	public String getDailyFortune() {
+		return fortuneService.getFortune();
 	}
 
 }
