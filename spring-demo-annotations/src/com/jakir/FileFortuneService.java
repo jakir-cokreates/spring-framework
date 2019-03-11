@@ -15,7 +15,7 @@ import org.springframework.stereotype.Component;
 @Component
 public class FileFortuneService implements FortuneService {
 
-//	private String fileName = "D:/spring/Remote/spring-framework/spring-demo-annotations/fortune-data.txt";
+	//	private String fileName = "D:/spring/Remote/spring-framework/spring-demo-annotations/fortune-data.txt";
 	private String fileName = "fortune-data.txt";
 	private List<String> theFortunes;
 
