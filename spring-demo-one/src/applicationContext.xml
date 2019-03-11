@@ -9,8 +9,16 @@
 	
     <!-- Define your beans here -->
     
+    <!-- define the dependency -->    
+    <bean id="myFortuneService"
+    		class="com.jakir.RandomFortuneService">
+    </bean>
+    	
  	<bean id="myGolfCoach"
- 		class="com.jakir.GolfCoach">	 		
+ 		class="com.jakir.GolfCoach">
+ 		
+ 		<!-- set up constructor injection -->
+ 		<constructor-arg ref="myFortuneService" />	 		
  	</bean>
     
 </beans>
